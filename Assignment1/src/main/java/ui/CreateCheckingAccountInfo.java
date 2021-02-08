@@ -136,7 +136,7 @@ public class CreateCheckingAccountInfo extends javax.swing.JPanel {
         checkingAccountInfo.setBankName(txt_BankName.getText());
         checkingAccountInfo.setBankAccountNumber(txt_BankRoutingNumber.getText());
         checkingAccountInfo.setBankRoutingNumber(txt_BankAccountNumber.getText());
-        checkingAccountInfo.setAccountBalance(txt_AccountBalance.getText());
+        checkingAccountInfo.setAccountBalance(Double.valueOf(txt_AccountBalance.getText()));
         checkingAccountInfo.setAccountType(txt_AccountType.getText());
         person.setCheckingAccountInfo(checkingAccountInfo);
     }//GEN-LAST:event_jButton1ActionPerformed

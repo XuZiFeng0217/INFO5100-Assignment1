@@ -27,9 +27,9 @@ public class Report extends javax.swing.JPanel {
         txt_LastName.setText(person.getDemographicInfo().getLastName());
         txt_PhoneNumber.setText(person.getDemographicInfo().getPhoneNumber());
         txt_DateOfBirth.setText(person.getDemographicInfo().getDob());
-        txt_Age.setText(person.getDemographicInfo().getAge());
-        txt_Height.setText(person.getDemographicInfo().getHeight());
-        txt_Weight.setText(person.getDemographicInfo().getWeight());
+        txt_Age.setText(person.getDemographicInfo().getAge()+"");
+        txt_Height.setText(person.getDemographicInfo().getHeight()+"");
+        txt_Weight.setText(person.getDemographicInfo().getWeight()+"");
         txt_SocialSecurityNumber.setText(person.getDemographicInfo().getSocialSecurityNumber());
         
         txt_StreetAddress.setText(person.getAddressInfo().getStreetAddress());
@@ -40,13 +40,13 @@ public class Report extends javax.swing.JPanel {
         txt_BankName.setText(person.getSavingAccountInfo().getBankName());
         txt_BankRoutingNumber.setText(person.getSavingAccountInfo().getBankRoutingNumber());
         txt_BankAccountNumber.setText(person.getSavingAccountInfo().getBankAccountNumber());
-        txt_AccountBalance.setText(person.getSavingAccountInfo().getAccountBalance());
+        txt_AccountBalance.setText(person.getSavingAccountInfo().getAccountBalance()+"");
         txt_AccountType.setText(person.getSavingAccountInfo().getAccountType());
         
         txt_BankName1.setText(person.getCheckingAccountInfo().getBankName());
         txt_BankRoutingNumber1.setText(person.getCheckingAccountInfo().getBankRoutingNumber());
         txt_BankAccountNumber1.setText(person.getCheckingAccountInfo().getBankAccountNumber());
-        txt_AccountBalance1.setText(person.getCheckingAccountInfo().getAccountBalance());
+        txt_AccountBalance1.setText(person.getCheckingAccountInfo().getAccountBalance()+"");
         txt_AccountType1.setText(person.getCheckingAccountInfo().getAccountType());
         
         txt_MedicalRecordNumber.setText(person.getMedicalRecord().getMedicakRecordNumber());
@@ -575,9 +575,9 @@ public class Report extends javax.swing.JPanel {
                             .addComponent(txt_SocialSecurityNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel20)
-                            .addComponent(txt_AccountBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_AccountBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel20))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel21)
@@ -605,11 +605,12 @@ public class Report extends javax.swing.JPanel {
                     .addComponent(jLabel34)
                     .addComponent(txt_DateOfExpiration, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txt_AccountBalance1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel35)
-                    .addComponent(txt_BloodType, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel26)
+                        .addComponent(jLabel35)
+                        .addComponent(txt_BloodType, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
@@ -633,9 +634,9 @@ public class Report extends javax.swing.JPanel {
                     .addComponent(jLabel30)
                     .addComponent(txt_Alergy2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel31)
-                    .addComponent(txt_Alergy3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txt_Alergy3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel31))
                 .addContainerGap(156, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents

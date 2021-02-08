@@ -178,9 +178,9 @@ public class CreateDemographicInfo extends javax.swing.JPanel {
         demographicInfo.setLastName(txt_LastName.getText());
         demographicInfo.setPhoneNumber(txt_PhoneNumber.getText());
         demographicInfo.setDob(txt_DateOfBirth.getText());
-        demographicInfo.setAge(txt_Age.getText());
-        demographicInfo.setHeight(txt_Height.getText());
-        demographicInfo.setWeight(txt_Weight.getText());
+        demographicInfo.setAge(Integer.parseInt(txt_Age.getText()));
+        demographicInfo.setHeight(Double.valueOf(txt_Height.getText()));
+        demographicInfo.setWeight(Double.valueOf(txt_Weight.getText()));
         demographicInfo.setSocialSecurityNumber(txt_SocialSecurityNumber.getText());
         person.setDemographicInfo(demographicInfo);
     }//GEN-LAST:event_jButton1ActionPerformed

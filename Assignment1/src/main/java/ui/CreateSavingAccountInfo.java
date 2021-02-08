@@ -144,7 +144,7 @@ public class CreateSavingAccountInfo extends javax.swing.JPanel {
         savingAccountInfo.setBankName(txt_BankName.getText());
         savingAccountInfo.setBankAccountNumber(txt_BankRoutingNumber.getText());
         savingAccountInfo.setBankRoutingNumber(txt_BankAccountNumber.getText());
-        savingAccountInfo.setAccountBalance(txt_AccountBalance.getText());
+        savingAccountInfo.setAccountBalance(Double.valueOf(txt_AccountBalance.getText()));
         savingAccountInfo.setAccountType(txt_AccountType.getText());
         person.setSavingAccountInfo(savingAccountInfo);
     }//GEN-LAST:event_jButton1ActionPerformed

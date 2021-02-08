@@ -16,9 +16,9 @@ public class DemographicInfo {
     private String lastName;
     private String phoneNumber;
     private String dob;
-    private String age;
-    private String height;
-    private String weight;
+    private int age;
+    private double height;
+    private double weight;
     private String socialSecurityNumber;
 
     public String getFirtName() {
@@ -37,15 +37,15 @@ public class DemographicInfo {
         return dob;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public String getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public String getWeight() {
+    public double getWeight() {
         return weight;
     }
 
@@ -69,15 +69,15 @@ public class DemographicInfo {
         this.dob = dob;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public void setHeight(String height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public void setWeight(String weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 

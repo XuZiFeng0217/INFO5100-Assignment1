@@ -22,7 +22,7 @@ public class ViewCheckingAccountInfo extends javax.swing.JPanel {
         txt_BankName.setText(checkingAccountInfo.getBankName());
         txt_BankRoutingNumber.setText(checkingAccountInfo.getBankRoutingNumber());
         txt_BankAccountNumber.setText(checkingAccountInfo.getBankAccountNumber());
-        txt_AccountBalance.setText(checkingAccountInfo.getAccountBalance());
+        txt_AccountBalance.setText(checkingAccountInfo.getAccountBalance()+"");
         txt_AccountType.setText(checkingAccountInfo.getAccountType());
     }
 

@@ -22,9 +22,9 @@ public class ViewDemographicInfo extends javax.swing.JPanel {
         txt_LastName.setText(demographicInfo.getLastName());
         txt_PhoneNumber.setText(demographicInfo.getPhoneNumber());
         txt_DateOfBirth.setText(demographicInfo.getDob());
-        txt_Age.setText(demographicInfo.getAge());
-        txt_Height.setText(demographicInfo.getHeight());
-        txt_Weight.setText(demographicInfo.getWeight());
+        txt_Age.setText(demographicInfo.getAge()+"");
+        txt_Height.setText(demographicInfo.getHeight()+"");
+        txt_Weight.setText(demographicInfo.getWeight()+"");
         txt_SocialSecurityNumber.setText(demographicInfo.getSocialSecurityNumber());
         
     }

@@ -9,6 +9,8 @@ model\DriverLicenseInfo.class
 ui\CreateAddressInfo$2.class
 ui\MainJframe$1.class
 ui\CreateDriverLicenseInfo$3.class
+ui\Report$4.class
+ui\Report$7.class
 ui\CreateMedicalRecord$2.class
 ui\MainJframe$4.class
 ui\MainJframe$11.class
@@ -23,6 +25,7 @@ model\DemographicInfo.class
 ui\Report.class
 ui\ViewCheckingAccountInfo$1.class
 ui\ViewMedicalRecord$1.class
+ui\Report$3.class
 ui\ViewSavingAccountInfo$1.class
 ui\CreateDriverLicenseInfo.class
 ui\MainJframe$5.class
@@ -31,6 +34,7 @@ ui\CreateCheckingAccountInfo$2.class
 ui\CreateSavingAccountInfo$3.class
 ui\CreateDemographicInfo$2.class
 model\MedicalRecord.class
+ui\Report$6.class
 model\AccountInfo.class
 ui\CreateDemographicInfo.class
 ui\CreateAddressInfo.class
@@ -42,9 +46,11 @@ ui\CreateCheckingAccountInfo$3.class
 ui\ViewCheckingAccountInfo$2.class
 ui\CreateDriverLicenseInfo$1.class
 ui\MainJframe$7.class
+ui\Report$2.class
 ui\MainJframe$13.class
 model\AddressInfo.class
 ui\CreateAddressInfo$1.class
+ui\Report$5.class
 ui\ViewDriverLicenseInfo.class
 ui\MainJframe$9.class
 ui\CreateDemographicInfo$3.class
@@ -55,6 +61,7 @@ ui\MainJframe$10.class
 ui\ViewSavingAccountInfo.class
 ui\ViewDemographicInfo$2.class
 ui\MainJframe$6.class
+ui\Report$1.class
 ui\CreateDriverLicenseInfo$2.class
 ui\ViewDemographicInfo.class
 ui\ViewAddressInfo.class

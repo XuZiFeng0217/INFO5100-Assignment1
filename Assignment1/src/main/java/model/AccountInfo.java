@@ -13,7 +13,7 @@ public class AccountInfo {
     private String bankName;
     private String bankRoutingNumber;
     private String bankAccountNumber;
-    private String accountBalance;
+    private double accountBalance;
     private String accountType;
 
     public String getBankName() {
@@ -28,7 +28,7 @@ public class AccountInfo {
         return bankAccountNumber;
     }
 
-    public String getAccountBalance() {
+    public double getAccountBalance() {
         return accountBalance;
     }
 
@@ -48,7 +48,7 @@ public class AccountInfo {
         this.bankAccountNumber = bankAccountNumber;
     }
 
-    public void setAccountBalance(String accountBalance) {
+    public void setAccountBalance(double accountBalance) {
         this.accountBalance = accountBalance;
     }
 
