@@ -65,7 +65,7 @@ public class Patient {
     public boolean isPatientNormal(VitalSigns vitalSigns){
         switch(this.ageGroup){
             case "Newborn":
-                if(!(vitalSigns.getRespiratoryRate()>=30
+                if((vitalSigns.getRespiratoryRate()>=30
                         &&vitalSigns.getRespiratoryRate()<=50
                         &&vitalSigns.getHeartRate()>=120
                         &&vitalSigns.getHeartRate()<=160
@@ -82,7 +82,7 @@ public class Patient {
                             }
                 
             case "Infant":
-                if(!(vitalSigns.getRespiratoryRate()>=20
+                if((vitalSigns.getRespiratoryRate()>=20
                         &&vitalSigns.getRespiratoryRate()<=30
                         &&vitalSigns.getHeartRate()>=80
                         &&vitalSigns.getHeartRate()<=140
@@ -99,7 +99,7 @@ public class Patient {
                 
                 
             case "Toddler":
-                if(!(vitalSigns.getRespiratoryRate()>=20
+                if((vitalSigns.getRespiratoryRate()>=20
                         &&vitalSigns.getRespiratoryRate()<=30
                         &&vitalSigns.getHeartRate()>=80
                         &&vitalSigns.getHeartRate()<=130
@@ -115,7 +115,7 @@ public class Patient {
                 }
                 
             case "Preschooler":
-                if(!(vitalSigns.getRespiratoryRate()>=20
+                if((vitalSigns.getRespiratoryRate()>=20
                         &&vitalSigns.getRespiratoryRate()<=30
                         &&vitalSigns.getHeartRate()>=80
                         &&vitalSigns.getHeartRate()<=120
@@ -131,7 +131,7 @@ public class Patient {
                 }  
                 
             case "School Age":
-                if(!(vitalSigns.getRespiratoryRate()>=20
+                if((vitalSigns.getRespiratoryRate()>=20
                         &&vitalSigns.getRespiratoryRate()<=30
                         &&vitalSigns.getHeartRate()>=70
                         &&vitalSigns.getHeartRate()<=110
@@ -147,7 +147,7 @@ public class Patient {
                 } 
                 
             case "Adolescent":
-                if(!(vitalSigns.getRespiratoryRate()>=12
+                if((vitalSigns.getRespiratoryRate()>=12
                         &&vitalSigns.getRespiratoryRate()<=20
                         &&vitalSigns.getHeartRate()>=55
                         &&vitalSigns.getHeartRate()<=105

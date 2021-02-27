@@ -24,6 +24,10 @@ public class VitalSigns {
         this.weightInKilos = weightInKilos;
         this.weightInPounds = weightInPounds;
     }
+
+    public VitalSigns() {
+    }
+    
     
     
 

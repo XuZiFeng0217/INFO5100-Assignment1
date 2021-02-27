@@ -5,6 +5,7 @@
  */
 package Part1;
 
+
 import java.util.Scanner;
 
 /**
@@ -13,6 +14,8 @@ import java.util.Scanner;
  */
 public class Test {
     public static void main(String[] args) {
+       
+        VitalSigns vitalSigns = new VitalSigns();
         Scanner sc = new Scanner(System.in);
         System.out.println("Please input the FirstName");
         String firstName = sc.nextLine();
@@ -20,18 +23,18 @@ public class Test {
         String lastName = sc.nextLine();
         System.out.println("Please input the AgeGroup");
         String ageGroup = sc.nextLine();
-        System.out.println("Please input the RespiratoryRate");
-        double respiratoryRate = sc.nextDouble();
-        System.out.println("Please input the HeartRate");
-        double heartRate = sc.nextDouble();
-        System.out.println("Please input the SystolicBloodPressure");
-        double systolicBloodPressure = sc.nextDouble();
-        System.out.println("Please input the WeightInKilos");
-        double weightInKilos = sc.nextDouble();
-        System.out.println("Please input the WeightInPounds");
-        double weightInPounds = sc.nextDouble();
-        Patient p = new Patient(firstName,lastName,ageGroup);
-        VitalSigns vitalSigns = new VitalSigns(respiratoryRate,heartRate,systolicBloodPressure,weightInKilos,weightInPounds);
+        if(!(ageGroup.equals("Newborn")||ageGroup.equals("Infant")||ageGroup.equals("Toddler")||ageGroup.equals("Preschooler")||ageGroup.equals("School Age")||ageGroup.equals("Adolescent"))){
+            System.out.println("Please check your input!!");
+            return;
+        }
+        Util util = new Util();
+        try{
+            util.createVS(vitalSigns); 
+        }catch(Exception e){
+            System.out.println("Please check your input");
+            return;
+        }
+        Patient p = new Patient(firstName,lastName,ageGroup);    
         System.out.println(p.isPatientNormal(vitalSigns));
     }
 }

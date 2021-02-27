@@ -25,6 +25,9 @@ public class VitalSigns {
         this.weightInPounds = weightInPounds;
     }
 
+    public VitalSigns() {
+    }
+
 
 
     public double getRespiratoryRate() {
